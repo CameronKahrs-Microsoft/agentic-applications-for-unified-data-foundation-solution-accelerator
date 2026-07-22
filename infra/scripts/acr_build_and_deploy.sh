@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 #
 # Separate post-deployment script: builds the application container images with
 # Azure Container Registry remote build (`az acr build`) and points the deployed

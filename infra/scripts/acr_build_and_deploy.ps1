@@ -153,14 +153,21 @@ function Set-AppImage {
     param([string]$AppName, [string]$Image)
     $imageRef = "$LoginServer/$($Image):$ImageTag"
     Write-Host "`n--- Updating App Service '$AppName' -> $imageRef ---"
-    az webapp config container set `
-        --name $AppName `
-        --resource-group $ResourceGroup `
-        --container-image-name $imageRef `
-        --container-registry-url "https://$LoginServer" | Out-Null
+
+    # NOTE: Cannot pass "DOCKER|image:tag" directly to az webapp config set because
+    # PowerShell passes arguments through cmd.exe, which interprets | as a pipe operator.
+    # Workaround: write the value into a temp JSON file and use `az rest` to PATCH.
+    $bodyFile = [System.IO.Path]::GetTempFileName() + '.json'
+    [System.IO.File]::WriteAllText($bodyFile, "{`"properties`":{`"linuxFxVersion`":`"DOCKER|$imageRef`"}}")
+
+    $subId = az account show --query id -o tsv
+    az rest --method patch `
+        --uri "https://management.azure.com/subscriptions/$subId/resourceGroups/$ResourceGroup/providers/Microsoft.Web/sites/$AppName/config/web?api-version=2022-03-01" `
+        --body "@$bodyFile" --output none
+    Remove-Item $bodyFile -Force -ErrorAction SilentlyContinue
     if ($LASTEXITCODE -ne 0) { Write-Error "Failed to update container image for $AppName"; exit 1 }
 
-    az webapp restart --name $AppName --resource-group $ResourceGroup | Out-Null
+    az webapp restart --name $AppName --resource-group $ResourceGroup --output none
 }
 
 Set-AppImage $ApiAppName $ApiImage
