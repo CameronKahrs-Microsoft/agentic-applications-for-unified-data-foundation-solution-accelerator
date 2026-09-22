@@ -1,0 +1,11 @@
+{
+  "index_name": "knowledge_index",
+  "knowledge_base_name": "rd-kb",
+  "knowledge_source_name": "rd-ks",
+  "document_count": 13,
+  "pdf_files": [
+    "major_service_outage_response_guide.pdf",
+    "network_operations_incident_policy.pdf",
+    "trouble_ticket_handling_standard.pdf"
+  ]
+}

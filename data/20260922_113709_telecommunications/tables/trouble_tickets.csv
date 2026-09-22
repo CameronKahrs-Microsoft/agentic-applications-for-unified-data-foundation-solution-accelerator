@@ -1,0 +1,41 @@
+ticket_id,outage_id,customer_segment,priority,channel,status,created_date,resolved_date,response_time_hours,resolution_time_hours,sla_breached
+TCK001,OUT008,Small Business,P1,NOC Alert,Resolved,2026-08-12,2026-08-13,16,27,False
+TCK002,OUT001,Enterprise,P1,Phone,Resolved,2026-07-28,2026-07-28,15,11,False
+TCK003,OUT003,Consumer,P4,NOC Alert,In Progress,2026-09-06,2026-09-07,5,17,False
+TCK004,OUT002,Enterprise,P3,Portal,Resolved,2026-08-06,2026-08-07,18,36,False
+TCK005,OUT008,Enterprise,P4,NOC Alert,Closed,2026-09-06,2026-09-08,14,39,False
+TCK006,OUT003,Consumer,P3,Email,Closed,2026-08-28,2026-08-29,12,16,False
+TCK007,OUT002,Small Business,P3,Phone,Resolved,2026-09-14,2026-09-15,17,33,False
+TCK008,OUT011,Small Business,P1,Portal,Closed,2026-09-17,2026-09-17,2,9,False
+TCK009,OUT003,Consumer,P1,Phone,In Progress,2026-09-13,2026-09-14,6,29,False
+TCK010,OUT008,Consumer,P3,Portal,Open,2026-08-15,2026-08-16,3,26,False
+TCK011,OUT009,Enterprise,P3,Email,Resolved,2026-08-29,2026-08-30,15,35,False
+TCK012,OUT016,Consumer,P3,NOC Alert,Open,2026-09-06,2026-09-06,18,2,False
+TCK013,OUT007,Small Business,P2,Portal,Resolved,2026-08-10,2026-08-11,4,36,False
+TCK014,OUT005,Small Business,P3,Portal,Open,2026-08-05,2026-08-06,9,23,False
+TCK015,OUT016,Enterprise,P3,NOC Alert,Closed,2026-09-15,2026-09-16,10,29,False
+TCK016,OUT008,Wholesale,P2,Phone,Resolved,2026-09-12,2026-09-12,15,2,False
+TCK017,OUT016,Consumer,P2,Email,Resolved,2026-08-07,2026-08-08,9,34,False
+TCK018,OUT014,Consumer,P3,NOC Alert,Resolved,2026-08-05,2026-08-06,6,34,False
+TCK019,OUT007,Consumer,P3,Phone,Resolved,2026-07-26,2026-07-27,4,21,False
+TCK020,OUT004,Wholesale,P4,Portal,In Progress,2026-07-31,2026-08-02,17,40,False
+TCK021,OUT004,Enterprise,P4,Phone,Open,2026-09-10,2026-09-11,5,25,False
+TCK022,OUT014,Consumer,P1,NOC Alert,Resolved,2026-08-05,2026-08-06,6,36,False
+TCK023,OUT012,Small Business,P3,Phone,In Progress,2026-08-04,2026-08-04,17,2,False
+TCK024,OUT014,Enterprise,P3,Portal,Open,2026-08-15,2026-08-16,11,33,False
+TCK025,OUT014,Enterprise,P1,Email,Resolved,2026-09-21,2026-09-22,4,25,False
+TCK026,OUT015,Small Business,P3,Portal,Open,2026-07-28,2026-07-29,10,17,False
+TCK027,OUT002,Small Business,P3,Phone,Closed,2026-09-19,2026-09-21,8,38,False
+TCK028,OUT004,Consumer,P2,NOC Alert,In Progress,2026-07-24,2026-07-24,3,7,False
+TCK029,OUT002,Consumer,P3,Email,Closed,2026-06-21,2026-06-23,56,56,True
+TCK030,OUT013,Consumer,P1,Phone,Closed,2026-06-17,2026-06-20,59,64,True
+TCK031,OUT011,Enterprise,P2,Phone,In Progress,2026-09-06,2026-09-10,67,108,True
+TCK032,OUT004,Consumer,P2,Portal,Resolved,2026-07-14,2026-07-17,35,81,True
+TCK033,OUT008,Consumer,P3,Portal,In Progress,2026-07-17,2026-07-21,63,102,True
+TCK034,OUT007,Consumer,P3,Portal,In Progress,2026-08-26,2026-08-29,59,73,True
+TCK035,OUT007,Small Business,P3,Phone,Open,2026-06-23,2026-06-27,44,99,True
+TCK036,OUT015,Wholesale,P4,Portal,Resolved,2026-06-29,2026-07-03,66,95,True
+TCK037,OUT005,Small Business,P4,NOC Alert,In Progress,2026-07-28,2026-08-01,58,105,True
+TCK038,OUT014,Consumer,P3,NOC Alert,Resolved,2026-09-07,2026-09-10,40,76,True
+TCK039,OUT006,Small Business,P3,Phone,Resolved,2026-09-14,2026-09-16,46,50,True
+TCK040,OUT009,Enterprise,P3,Portal,Closed,2026-07-09,2026-07-12,60,77,True

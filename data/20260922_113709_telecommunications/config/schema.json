@@ -1,0 +1,109 @@
+{
+  "name": "Network operations with outage tracking and trouble ticket management",
+  "description": "Network operations with outage tracking and trouble ticket management",
+  "tables": {
+    "network_outages": {
+      "columns": [
+        {
+          "name": "outage_id",
+          "type": "String"
+        },
+        {
+          "name": "region",
+          "type": "String"
+        },
+        {
+          "name": "service_type",
+          "type": "String"
+        },
+        {
+          "name": "severity",
+          "type": "String"
+        },
+        {
+          "name": "root_cause",
+          "type": "String"
+        },
+        {
+          "name": "reported_date",
+          "type": "Date"
+        },
+        {
+          "name": "restored_date",
+          "type": "Date"
+        },
+        {
+          "name": "duration_hours",
+          "type": "BigInt"
+        },
+        {
+          "name": "customers_affected",
+          "type": "BigInt"
+        },
+        {
+          "name": "status",
+          "type": "String"
+        }
+      ],
+      "key": "outage_id"
+    },
+    "trouble_tickets": {
+      "columns": [
+        {
+          "name": "ticket_id",
+          "type": "String"
+        },
+        {
+          "name": "outage_id",
+          "type": "String"
+        },
+        {
+          "name": "customer_segment",
+          "type": "String"
+        },
+        {
+          "name": "priority",
+          "type": "String"
+        },
+        {
+          "name": "channel",
+          "type": "String"
+        },
+        {
+          "name": "status",
+          "type": "String"
+        },
+        {
+          "name": "created_date",
+          "type": "Date"
+        },
+        {
+          "name": "resolved_date",
+          "type": "Date"
+        },
+        {
+          "name": "response_time_hours",
+          "type": "BigInt"
+        },
+        {
+          "name": "resolution_time_hours",
+          "type": "BigInt"
+        },
+        {
+          "name": "sla_breached",
+          "type": "Boolean"
+        }
+      ],
+      "key": "ticket_id"
+    }
+  },
+  "relationships": [
+    {
+      "name": "trouble_tickets_to_network_outages",
+      "from": "trouble_tickets",
+      "to": "network_outages",
+      "fromKey": "outage_id",
+      "toKey": "outage_id"
+    }
+  ]
+}

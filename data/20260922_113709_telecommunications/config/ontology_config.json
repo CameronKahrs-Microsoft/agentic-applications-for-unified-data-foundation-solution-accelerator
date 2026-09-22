@@ -1,0 +1,74 @@
+{
+    "scenario": "telecommunications",
+    "name": "Network operations with outage tracking and trouble ticket management",
+    "description": "Network operations with outage tracking and trouble ticket management",
+    "tables": {
+        "network_outages": {
+            "columns": [
+                "outage_id",
+                "region",
+                "service_type",
+                "severity",
+                "root_cause",
+                "reported_date",
+                "restored_date",
+                "duration_hours",
+                "customers_affected",
+                "status"
+            ],
+            "types": {
+                "outage_id": "String",
+                "region": "String",
+                "service_type": "String",
+                "severity": "String",
+                "root_cause": "String",
+                "reported_date": "Date",
+                "restored_date": "Date",
+                "duration_hours": "BigInt",
+                "customers_affected": "BigInt",
+                "status": "String"
+            },
+            "key": "outage_id",
+            "source_table": "network_outages"
+        },
+        "trouble_tickets": {
+            "columns": [
+                "ticket_id",
+                "outage_id",
+                "customer_segment",
+                "priority",
+                "channel",
+                "status",
+                "created_date",
+                "resolved_date",
+                "response_time_hours",
+                "resolution_time_hours",
+                "sla_breached"
+            ],
+            "types": {
+                "ticket_id": "String",
+                "outage_id": "String",
+                "customer_segment": "String",
+                "priority": "String",
+                "channel": "String",
+                "status": "String",
+                "created_date": "Date",
+                "resolved_date": "Date",
+                "response_time_hours": "BigInt",
+                "resolution_time_hours": "BigInt",
+                "sla_breached": "Boolean"
+            },
+            "key": "ticket_id",
+            "source_table": "trouble_tickets"
+        }
+    },
+    "relationships": [
+        {
+            "name": "trouble_tickets_to_network_outages",
+            "from": "trouble_tickets",
+            "to": "network_outages",
+            "fromKey": "outage_id",
+            "toKey": "outage_id"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+=== SQL QUESTIONS (Fabric Data) ===
+1. How many rows are in network_outages, and how many are currently still not resolved based on status?
+2. What is the total customers_affected by network_outages, grouped by region, and which region has the highest impact?
+3. In the past 90 days, how many trouble_tickets were created by priority, and what is the average response_time_hours for each priority?
+4. What are the top 5 outages in network_outages by duration_hours, and what region, service_type, and root_cause are associated with each outage?
+5. In the last month, how many trouble_tickets were resolved, and how many of those had sla_breached = True, grouped by customer_segment?
+
+=== DOCUMENT QUESTIONS (AI Search) ===
+1. In the major service outage response guide, what are the required first actions after a major outage is detected?
+2. According to the network operations incident policy, how should outage severity be classified and escalated?
+3. What does the trouble ticket handling standard say about updating ticket status and ownership during investigation?
+4. In the major service outage response guide, what communication steps are required for customers and internal teams?
+5. According to the trouble ticket handling standard, what information should be included in a high-priority trouble ticket?
+
+=== COMBINED INSIGHT QUESTIONS ===
+1. Based on the network operations incident policy, are our high-severity outages being escalated and tracked in a way that matches the documented process?
+2. Using the trouble ticket handling standard and the trouble_tickets table, are we closing tickets with the required resolution details and status updates?
+3. Comparing the major service outage response guide with recent network_outages records, are our longest outages following the recommended response workflow?
+4. Does the documented incident policy require different handling for outages by severity, and do our trouble_tickets linked to those outages show the expected priority pattern?
+5. Based on the response guide and the outage data, which regions appear to have the biggest gap between recommended major-outage handling and actual outage duration or customer impact?

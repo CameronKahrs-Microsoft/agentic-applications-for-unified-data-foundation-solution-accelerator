@@ -1,0 +1,12 @@
+{
+  "lakehouse_id": "77cecf26-ee9b-409f-977e-9f2c5c4f94dc",
+  "lakehouse_name": "lakehouse_rd_1",
+  "ontology_id": "c9a99eeb-287e-4375-81f3-347246134f56",
+  "ontology_name": "ontology_rd_1",
+  "data_agent_id": "cb2b5fef-eac9-4c2a-a6e8-796ee42967eb",
+  "data_agent_name": "dataagent_rd_1",
+  "datasource_type": "lakehouse",
+  "solution_name": "rd",
+  "created_at": "2026-09-22T11:43:26.877976",
+  "sql_endpoint": "b4xsqqoiz2vepm4uuywf6i5o4i-farusgiwqs7u7pkljeojg3icee.datawarehouse.fabric.microsoft.com"
+}

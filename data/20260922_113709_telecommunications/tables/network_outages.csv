@@ -1,0 +1,17 @@
+outage_id,region,service_type,severity,root_cause,reported_date,restored_date,duration_hours,customers_affected,status
+OUT001,North,Mobile Voice,Low,Power Failure,2026-07-02,2026-07-02,1,1258,Resolved
+OUT002,South,Mobile Data,Critical,Router Fault,2026-09-18,2026-09-18,6,1227,Resolved
+OUT003,East,Fixed Internet,Low,Weather,2026-08-17,2026-08-17,2,929,Closed
+OUT004,West,VoIP,Medium,Software Bug,2026-08-24,2026-08-24,2,1872,Resolved
+OUT005,Central,TV,High,Weather,2026-09-08,2026-09-08,6,1046,Resolved
+OUT006,North,Mobile Voice,Critical,Router Fault,2026-07-14,2026-07-14,1,1937,Resolved
+OUT007,South,Mobile Data,Low,Software Bug,2026-07-08,2026-07-08,4,2418,Closed
+OUT008,East,Fixed Internet,High,Fiber Cut,2026-09-17,2026-09-17,1,1899,Resolved
+OUT009,West,VoIP,Critical,Fiber Cut,2026-09-10,2026-09-10,2,1827,Closed
+OUT010,Central,TV,Critical,Power Failure,2026-08-23,2026-08-23,5,646,Closed
+OUT011,North,Mobile Voice,Low,Fiber Cut,2026-07-06,2026-07-06,1,1747,Resolved
+OUT012,South,Mobile Data,Medium,Power Failure,2026-07-12,2026-07-12,2,1800,Resolved
+OUT013,East,Fixed Internet,Low,Fiber Cut,2026-04-08,2026-04-09,18,4001,Closed
+OUT014,West,VoIP,Medium,Power Failure,2026-05-05,2026-05-06,13,6975,Resolved
+OUT015,Central,TV,Medium,Software Bug,2026-07-27,2026-07-28,14,4605,Closed
+OUT016,North,Mobile Voice,Low,Power Failure,2026-04-24,2026-04-24,11,3938,Resolved
